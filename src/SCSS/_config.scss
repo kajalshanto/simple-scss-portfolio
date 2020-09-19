@@ -1,6 +1,7 @@
 $primary-color: #272727;
 $secondary-color: #ff652f;
 $white: #fff;
+$black: #000;
 
 * {
     box-sizing: border-box;
@@ -14,4 +15,18 @@ a {
 
 li {
     list-style-type: none;
+}
+
+@mixin transition-ease {
+    transition: all 0.4s ease-in-out;
+}
+
+@function set-text-color($color) {
+    @if(lightness($color) > 40%) {
+        @return $black;
+    }
+
+    @else {
+        @return $white;
+    }
 }
