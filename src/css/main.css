@@ -164,6 +164,69 @@ li {
   transition-delay: 0.55s;
 }
 
+.about {
+  padding-bottom: 2rem;
+}
+
+.about__bio__image {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to right, rgba(39, 39, 39, 0.9), rgba(39, 39, 39, 0.3)), url(../images/model-1.jpg);
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.about__bio__image p {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.about__bio {
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.about__bio .text__secondary {
+  padding-bottom: 1rem;
+}
+
+.about .jobs {
+  width: 60vw;
+  margin: 2rem auto 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 2rem;
+}
+
+.about .jobs__job {
+  background: #414141;
+  padding: 0.8rem;
+  border-bottom: 5px solid #ff652f;
+}
+
+.about .jobs__job h2,
+.about .jobs__job h3 {
+  margin: 0.5rem 0;
+}
+
+.about .jobs__job h5 {
+  margin: 0.3rem 0;
+}
+
+.about .social__icons {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  transform: rotate(90deg) translate(-3rem, -5rem);
+}
+
 body {
   background-color: #272727;
   color: #fff;
@@ -187,6 +250,10 @@ header {
   z-index: 1000;
   width: 100%;
   padding: 1rem;
+}
+
+.text__secondary {
+  color: #ff652f;
 }
 
 main {
